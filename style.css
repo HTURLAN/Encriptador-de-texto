@@ -1,0 +1,22 @@
+.caja{
+    
+    position: relative;
+    margin: 0 1% 10px;
+}
+
+.texto-inicial{
+    display: inline;
+    width: 50%;
+}
+
+.texto-procesado{
+    width: 50%;
+    display: inline-block;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid #000000;
+    border-radius: 10px
+}
