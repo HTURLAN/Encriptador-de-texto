@@ -1,6 +1,5 @@
 const campo_texto = document.querySelector(".campo-texto");
 const mensaje_procesado = document.querySelector(".campoMensaje");
-//const mensaje_encriptado = [];
 
 const matriz_cambio = [
     ["e", "enter"], //La letra "e" es convertida para "enter"
@@ -10,17 +9,16 @@ const matriz_cambio = [
     ["u", "ufat"]   //La letra "u" es convertida para "ufat"
 ];
 
-
 function btnEncriptar() {
     const texto = encriptarTexto(campo_texto.value);
-    console.log(texto);
+    //console.log(texto);
     mensaje_procesado.value = texto;
     campo_texto.value = "";
 }
 
 function btnDesencriptar() {
     const texto = desencriptarTexto(campo_texto.value);
-    console.log(texto);
+    //console.log(texto);
     mensaje_procesado.value = texto;
     campo_texto.value = "";
 }
@@ -45,7 +43,7 @@ function encriptarTexto(textoDesencriptado) {
 }
 
 function desencriptarTexto(textoEncriptado) {
-    for (let i = 0; i < matriz_cambio.length; i++) {
+    for (let i = matriz_cambio.length - 1 ; i > -1; i--) {
         if(textoEncriptado.includes(matriz_cambio[i][1])){
             textoEncriptado = textoEncriptado.replaceAll(
                 matriz_cambio[i][1],

@@ -6,13 +6,12 @@
     letter-spacing: 0em;
 }
 
-.logo{
-    display: flex;
-    margin: 20px;
-}
-
 .caja{
     display: flex;
+}
+.logo{
+    display: inline-flex;
+    margin: 20px;
 }
 
 .titulo{
@@ -42,17 +41,21 @@ main{
 }
 
 .texto-encriptado{
-    display: flex;
+    display: flexbox;
     border: none;
     margin-top: 90px;
     width: 50%;
 }
+.texto-encriptado p{
+    font-weight: bold;
+}
 
-.campoMensaje{
+.campo-Mensaje{
     background: white;
     background-image: url(imagenes/Muñeco.png);
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
+    background-position: center;
     border: none;
     border-radius: 24px;
     color: #0A3871;
@@ -60,9 +63,11 @@ main{
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    text-align: center;
+    
 }
 
-.campoMensaje:focus{
+.campo-Mensaje:focus{
     outline: none;
 }
 
@@ -105,4 +110,19 @@ main{
 
 footer{
         text-align: center;
-}   
+        margin: 10px 0 0 10px;
+}
+
+.links{
+    display: inline-flexbox;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Linkedin{
+    width: 2em;
+}
+
+.github{
+    width: 2em;
+}
