@@ -1,4 +1,4 @@
-const campo_texto = document.querySelector(".campo-texto");
+const campo_texto = document.querySelector(".campo_texto");
 const mensaje_procesado = document.querySelector(".campoMensaje");
 
 const matriz_cambio = [
@@ -11,7 +11,7 @@ const matriz_cambio = [
 
 function btnEncriptar() {
     const texto = encriptarTexto(campo_texto.value);
-    //console.log(texto);
+    console.log(texto);
     mensaje_procesado.value = texto;
     campo_texto.value = "";
 }

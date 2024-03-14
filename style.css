@@ -17,6 +17,8 @@
 .titulo{
     position: relative;
     margin: auto;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 main{
@@ -25,14 +27,14 @@ main{
     margin-left: 80px;
 }
 
-.campo-texto{
+.campo_texto{
     border: none;
     margin-top: 90px;
     width: 50%;
     color: #0A3871;
     text-transform: lowercase;
 }
-.campo-texto:focus{
+.campo_texto:focus{
     outline: none;
 }
 
@@ -40,17 +42,13 @@ main{
     color: #0A3871;
 }
 
-.texto-encriptado{
-    display: flexbox;
+.texto_encriptado{
     border: none;
-    margin-top: 90px;
     width: 50%;
 }
-.texto-encriptado p{
-    font-weight: bold;
-}
 
-.campo-Mensaje{
+
+.campoMensaje{
     background: white;
     background-image: url(imagenes/Muñeco.png);
     background-size: 80%;
@@ -62,13 +60,23 @@ main{
     margin-left: 90px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
-    text-align: center;
-    
 }
 
-.campo-Mensaje:focus{
+.campo_Mensaje:focus{
     outline: none;
+}
+
+.mensajes_campo_encriptado{
+    width: 215px;
+    background: white;
+    margin-left: 90px;
+    color: #0A3871;
+    text-align: center;
+    font-size: 15px;
+}
+
+.vacio{
+    font-weight: bold;
 }
 
 .informacion{
@@ -104,8 +112,7 @@ main{
     border: 1px solid #0A3871;
     position: relative;
     cursor: pointer;
-    margin-top: 265px;
-    margin-left: 100px;
+        margin-left: 100px;
 }
 
 footer{
