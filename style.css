@@ -43,8 +43,10 @@ main{
 }
 
 .texto_encriptado{
+    position: absolute;
+    right: 0;
     border: none;
-    width: 50%;
+    width: 40%;
 }
 
 
