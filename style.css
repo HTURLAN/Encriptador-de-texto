@@ -24,7 +24,7 @@
 main{
     position: relative;
     margin-bottom: 50px;
-    margin-left: 80px;
+    margin-left: 30%;
 }
 
 .texto_inicial{
@@ -132,6 +132,7 @@ footer{
     display: inline-flexbox;
     justify-content: space-around;
     align-items: center;
+    margin-left: 10%;
 }
 
 .Linkedin{
