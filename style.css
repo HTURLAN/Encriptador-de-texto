@@ -22,11 +22,16 @@
 }
 
 main{
-    display: flex;
+    position: relative;
     margin-bottom: 50px;
     margin-left: 80px;
 }
 
+.texto_inicial{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+}
 .campo_texto{
     border: none;
     margin-top: 90px;
@@ -43,7 +48,9 @@ main{
 }
 
 .texto_encriptado{
-    position: absolute;
+    
+    display: inline-flex;
+    flex-direction: column;
     right: 0;
     border: none;
     width: 40%;
@@ -59,7 +66,6 @@ main{
     border: none;
     border-radius: 24px;
     color: #0A3871;
-    margin-left: 90px;
     margin-top: 20px;
     padding-left: 20px;
 }
@@ -69,9 +75,9 @@ main{
 }
 
 .mensajes_campo_encriptado{
+    display: flexbox;
     width: 215px;
     background: white;
-    margin-left: 90px;
     color: #0A3871;
     text-align: center;
     font-size: 15px;
@@ -107,6 +113,7 @@ main{
 
 .btnCopiar{
     background: #D8DFE8;
+    margin-top: 25px;
     width: 200px;
     padding: 14px;
     border-radius: 14px;
@@ -114,7 +121,6 @@ main{
     border: 1px solid #0A3871;
     position: relative;
     cursor: pointer;
-        margin-left: 100px;
 }
 
 footer{

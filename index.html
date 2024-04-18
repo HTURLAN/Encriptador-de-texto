@@ -22,7 +22,6 @@
 
     <main>
         <section class="texto_inicial">
-            
             <div>
                 <textarea id="campoTexto" class="campo_texto" cols="35" rows="8" placeholder="Ingrese aquí el texto a procesar"></textarea>
                 <h6 class="informacion">¡Solo letras minúsculas y sin acentos!</h6>
@@ -35,18 +34,17 @@
         </section>
 
         <section class="texto_encriptado">
-            
             <div class="campo_Mensaje_encriptado">
-                <textarea id="campoMensaje" cols="20" rows="8" class="campoMensaje" placeholder="Ingrese un mensaje para encriptar o desencriptar" ></textarea>
+                <textarea id="campoMensaje" cols="20" rows="8" class="campoMensaje" ></textarea>
 
                 <div class="mensajes_campo_encriptado" >
-                <p class="vacio">Ningún mensaje fue encontrado</p>
-                
+                    <p class="vacio1">Ingrese un mensaje para encriptar o desencriptar</p>
+                    <p class="vacio">Ningún mensaje fue encontrado</p>
                 </div>
             </div>
 
-            <div>
-                <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+            <div id="btnCopiar">
+                <button class="btnCopiar" onclick="btnCopiar()" style="display: none;">Copiar</button>
             </div>
         </section>
     </main>
@@ -54,7 +52,7 @@
     <footer>
         <h1 class="copyright">Made by Axel Turlan</h1>
         <h2 class="links">
-            <a href="http://"><img class="Linkedin"  src="/imagenes/linkedin-logo.png" alt="Logo Linkedin"></a>
+            <a href="http://www.linkedin.com/in/hernanaxelturlan"><img class="Linkedin"  src="/imagenes/linkedin-logo.png" alt="Logo Linkedin"></a>
             <a href="http://"><img class="github"  src="/imagenes/logo-github.png" alt="Logo github"></a>
         </h2>
     </footer>

@@ -10,10 +10,12 @@ const matriz_cambio = [
 ];
 
 function btnEncriptar() {
+    ocultarmsj();
     const texto = encriptarTexto(campo_texto.value);
-    console.log(texto);
+    //console.log(texto);
     mensaje_procesado.value = texto;
     campo_texto.value = "";
+    mostrarbtn();
 }
 
 function btnDesencriptar() {
@@ -21,12 +23,14 @@ function btnDesencriptar() {
     //console.log(texto);
     mensaje_procesado.value = texto;
     campo_texto.value = "";
+    mostrarbtn();
 }
 
 function btnCopiar() {
     campo_texto.value = mensaje_procesado.value;
-    console.log(campo_texto.value);
+    //console.log(campo_texto.value);
     mensaje_procesado.value = "";
+    ocultarbtn();
 }
 
 function encriptarTexto(textoDesencriptado) {
@@ -53,3 +57,19 @@ function desencriptarTexto(textoEncriptado) {
     //console.log(textoEncriptado);
     return textoEncriptado;
 }
+
+function ocultarmsj(){
+        var elemento = document.querySelector(".mensajes_campo_encriptado");
+        elemento.style.display = "none";
+}
+
+function mostrarbtn(){
+    var boton = document.querySelector(".btnCopiar")
+    boton.style.display = "inline";
+}
+
+function ocultarbtn(){
+    var boton = document.querySelector(".btnCopiar")
+    boton.style.display = "none";
+}
+
